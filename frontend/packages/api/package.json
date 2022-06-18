@@ -1,0 +1,45 @@
+{
+  "name": "@remark42/api",
+  "version": "0.1.0-alpha.0",
+  "description": "Implementation of API methods for Remark42",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umputun/remark42.git#master"
+  },
+  "bugs": {
+    "url": "https://github.com/umputun/remark42/issues"
+  },
+  "homepage": "https://github.com/umputun/remark42/tree/master/frontend/packages/api#readme",
+  "keywords": [
+    "remark42",
+    "comments"
+  ],
+  "author": "Paul Mineev",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w -p tsconfig.dev.json",
+    "build": "tsc",
+    "prebuild": "rm -rf dist",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lint": "eslint src --ext=.ts,.js",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write '**/*.{ts,js,json}'"
+  },
+  "devDependencies": {
+    "@jest/types": "^28.1.1",
+    "@swc/core": "^1.2.203",
+    "@swc/jest": "^0.2.21",
+    "@types/jest": "^28.1.2",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
