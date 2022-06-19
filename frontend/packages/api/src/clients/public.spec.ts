@@ -104,4 +104,13 @@ describe('Public Client', () => {
 		expect(getLastFetchInit(fetchMock).method).toBe('put')
 		expect(getLastFetchUrl(fetchMock)).toBe(expected)
 	})
+
+	it('should return user', async () => {
+		const expected = { id: '1', username: 'user' }
+		const fetchMock = createFetchMock(expected)
+		const user = await client.getUser()
+
+		expect(getLastFetchInit(fetchMock).method).toBe('get')
+		expect(user).toEqual(expected)
+	})
 })
