@@ -1,6 +1,6 @@
 {
   "name": "@remark42/api",
-  "version": "0.6.0-alpha.10",
+  "version": "0.6.0-alpha.11",
   "description": "Implementation of API methods for Remark42",
   "repository": {
     "type": "git",
