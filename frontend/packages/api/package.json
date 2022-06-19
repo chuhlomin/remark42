@@ -1,6 +1,6 @@
 {
   "name": "@remark42/api",
-  "version": "0.6.0-alpha.3",
+  "version": "0.6.0-alpha.5",
   "description": "Implementation of API methods for Remark42",
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
     "dev": "tsc -w -p tsconfig.dev.json",
     "build": "tsc",
     "prebuild": "rm -rf dist",
+    "prepublish": "./prepublish.sh",
+    "postpublish": "./postpublish.sh",
     "test": "jest",
     "coverage": "jest --coverage",
     "lint": "eslint src --ext=.ts,.js",
