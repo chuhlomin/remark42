@@ -1,4 +1,4 @@
-import type { Config } from '@jest/types'
+import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
 	testEnvironment: 'jsdom',
@@ -10,6 +10,6 @@ const config: Config.InitialOptions = {
 	moduleNameMapper: {
 		'^@test/(.*)$': '<rootDir>/test/$1',
 	},
-}
+};
 
-export default config
+export default config;

@@ -3,7 +3,10 @@
   "compilerOptions": {
     "declaration": true,
     "noEmit": false,
-    "incremental": false
+    "incremental": false,
+    "paths": {
+      "./clients": ["./dist/clients"]
+    }
   },
   "include": ["src/**/*.ts"],
   "exclude": ["test/*", "src/**/*.spec.ts"]

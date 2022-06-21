@@ -1,12 +1,16 @@
-import type { User } from '@remark42/api/typings'
+// import type { User } from '@remark42/api'
+
 import { writable, get } from 'svelte/store'
 import { publicClient } from '../api/public'
 
+type User = {
+	X: 1
+}
 const loaded = writable(false)
 export const loading = writable(false)
 export const user = writable<User | null>(null)
 
-export function initUserStore(initialUser: User | null) {
+export function initUserStore(initialUser: User | null): void {
 	if (initialUser === null) {
 		return
 	}

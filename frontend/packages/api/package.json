@@ -16,12 +16,37 @@
   ],
   "author": "Paul Mineev",
   "license": "MIT",
+  "packageManager": "pnpm@7.1.0",
+  "engines": {
+    "pnpm": "7"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "module": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./clients/auth": {
+      "import": "./dist/clients/auth.js",
+      "module": "./dist/clients/auth.js",
+      "require": "./dist/clients/auth.js",
+      "types": "./dist/clients/auth.d.ts"
+    }
+  },
+  "files": [
+    "dist/**",
+    "package.json"
+  ],
   "scripts": {
     "dev": "tsc -w -p tsconfig.dev.json",
     "build": "tsc",
     "prebuild": "rm -rf dist",
-    "prepublish": "./prepublish.sh",
-    "postpublish": "./postpublish.sh",
+    "postinstall": "npm run build",
     "test": "jest",
     "coverage": "jest --coverage",
     "lint": "eslint src --ext=.ts,.js",

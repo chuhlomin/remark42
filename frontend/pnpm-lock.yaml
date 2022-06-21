@@ -227,29 +227,35 @@ importers:
 
   widgets/comments:
     specifiers:
-      '@remark42/api': '*'
-      '@rollup/plugin-commonjs': ^17.0.0
-      '@rollup/plugin-node-resolve': ^11.0.0
-      '@rollup/plugin-typescript': ^8.0.0
-      '@tsconfig/svelte': ^2.0.0
-      rollup: ^2.3.4
+      '@remark42/api': workspace:0.6.0-alpha.11
+      '@rollup/plugin-commonjs': ^22.0.0
+      '@rollup/plugin-node-resolve': ^13.3.0
+      '@rollup/plugin-typescript': ^8.3.3
+      '@tsconfig/svelte': ^3.0.0
+      eslint: ^8.18.0
+      eslint-plugin-svelte3: ^4.0.0
+      prettier: ^2.7.1
+      rollup: ^2.75.7
       rollup-plugin-css-only: ^3.1.0
-      rollup-plugin-livereload: ^2.0.0
-      rollup-plugin-svelte: ^7.0.0
-      rollup-plugin-terser: ^7.0.0
-      sirv-cli: ^2.0.0
-      svelte: ^3.0.0
-      svelte-check: ^2.0.0
-      svelte-preprocess: ^4.0.0
-      tslib: ^2.0.0
-      typescript: ^4.0.0
+      rollup-plugin-livereload: ^2.0.5
+      rollup-plugin-svelte: ^7.1.0
+      rollup-plugin-terser: ^7.0.2
+      sirv-cli: ^2.0.2
+      svelte: ^3.48.0
+      svelte-check: ^2.7.2
+      svelte-preprocess: ^4.10.7
+      tslib: ^2.4.0
+      typescript: ^4.7.4
     dependencies:
       '@remark42/api': link:../../packages/api
     devDependencies:
-      '@rollup/plugin-commonjs': 17.1.0_rollup@2.75.7
-      '@rollup/plugin-node-resolve': 11.2.1_rollup@2.75.7
+      '@rollup/plugin-commonjs': 22.0.0_rollup@2.75.7
+      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.75.7
       '@rollup/plugin-typescript': 8.3.3_g4qkabtmybowem44p7ts7jnbqm
-      '@tsconfig/svelte': 2.0.1
+      '@tsconfig/svelte': 3.0.0
+      eslint: 8.18.0
+      eslint-plugin-svelte3: 4.0.0_wy4erphnvhealet26qderqv6bu
+      prettier: 2.7.1
       rollup: 2.75.7
       rollup-plugin-css-only: 3.1.0_rollup@2.75.7
       rollup-plugin-livereload: 2.0.5
@@ -2190,7 +2196,7 @@ packages:
       string-length: 4.0.2
       strip-ansi: 6.0.1
       terminal-link: 2.1.1
-      v8-to-istanbul: 9.0.0
+      v8-to-istanbul: 9.0.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2475,11 +2481,11 @@ packages:
       webpack: 5.73.0_webpack-cli@4.10.0
     dev: true
 
-  /@rollup/plugin-commonjs/17.1.0_rollup@2.75.7:
-    resolution: {integrity: sha512-PoMdXCw0ZyvjpCMT5aV4nkL0QywxP29sODQsSGeDpr/oI49Qq9tRtAsb/LbYbDzFlOydVEqHmmZWFtXJEAX9ew==}
-    engines: {node: '>= 8.0.0'}
+  /@rollup/plugin-commonjs/22.0.0_rollup@2.75.7:
+    resolution: {integrity: sha512-Ktvf2j+bAO+30awhbYoCaXpBcyPmJbaEUYClQns/+6SNCYFURbvBiNbWgHITEsIgDDWCDUclWRKEuf8cwZCFoQ==}
+    engines: {node: '>= 12.0.0'}
     peerDependencies:
-      rollup: ^2.30.0
+      rollup: ^2.68.0
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.75.7
       commondir: 1.0.1
@@ -2491,16 +2497,16 @@ packages:
       rollup: 2.75.7
     dev: true
 
-  /@rollup/plugin-node-resolve/11.2.1_rollup@2.75.7:
-    resolution: {integrity: sha512-yc2n43jcqVyGE2sqV5/YCmocy9ArjVAP/BeXyTtADTBBX6V0e5UMqwO8CdQ0kzjb6zu5P1qMzsScCMRvE9OlVg==}
+  /@rollup/plugin-node-resolve/13.3.0_rollup@2.75.7:
+    resolution: {integrity: sha512-Lus8rbUo1eEcnS4yTFKLZrVumLPY+YayBdWXgFSHYhTT2iJbMhoaaBL3xl5NCdeRytErGr8tZ0L71BMRmnlwSw==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
-      rollup: ^1.20.0||^2.0.0
+      rollup: ^2.42.0
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.75.7
       '@types/resolve': 1.17.1
-      builtin-modules: 3.3.0
       deepmerge: 4.2.2
+      is-builtin-module: 3.1.0
       is-module: 1.0.0
       resolve: 1.22.1
       rollup: 2.75.7
@@ -2842,8 +2848,8 @@ packages:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
     dev: true
 
-  /@tsconfig/svelte/2.0.1:
-    resolution: {integrity: sha512-aqkICXbM1oX5FfgZd2qSSAGdyo/NRxjWCamxoyi3T8iVQnzGge19HhDYzZ6NrVOW7bhcWNSq9XexWFtMzbB24A==}
+  /@tsconfig/svelte/3.0.0:
+    resolution: {integrity: sha512-pYrtLtOwku/7r1i9AMONsJMVYAtk3hzOfiGNekhtq5tYBGA7unMve8RvUclKLMT3PrihvJqUmzsRGh0RP84hKg==}
     dev: true
 
   /@types/aria-query/4.2.2:
@@ -3185,7 +3191,7 @@ packages:
   /@types/testing-library__jest-dom/5.14.4:
     resolution: {integrity: sha512-EUCs9PTBOEyfRtLKkKd31YrRCx/9Wxjy2Uqb6IH/KAOr7/vP0i8iClOyxQqjm/UxMGU5r5s2vOBM7vSPQVmabg==}
     dependencies:
-      '@types/jest': 28.1.2
+      '@types/jest': 26.0.24
     dev: true
 
   /@types/tough-cookie/4.0.2:
@@ -5286,7 +5292,7 @@ packages:
       supports-color:
         optional: true
     dependencies:
-      ms: 2.1.3
+      ms: 2.1.2
     dev: true
 
   /debug/4.3.4:
@@ -6071,6 +6077,16 @@ packages:
       resolve: 2.0.0-next.4
       semver: 6.3.0
       string.prototype.matchall: 4.0.7
+    dev: true
+
+  /eslint-plugin-svelte3/4.0.0_wy4erphnvhealet26qderqv6bu:
+    resolution: {integrity: sha512-OIx9lgaNzD02+MDFNLw0GEUbuovNcglg+wnd/UY0fbZmlQSz7GlQiQ1f+yX0XvC07XPcDOnFcichqI3xCwp71g==}
+    peerDependencies:
+      eslint: '>=8.0.0'
+      svelte: ^3.2.0
+    dependencies:
+      eslint: 8.18.0
+      svelte: 3.48.0
     dev: true
 
   /eslint-plugin-testing-library/4.12.4_hxadhbs2xogijvk7vq4t2azzbu:
@@ -7489,6 +7505,13 @@ packages:
 
   /is-buffer/1.1.6:
     resolution: {integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==}
+    dev: true
+
+  /is-builtin-module/3.1.0:
+    resolution: {integrity: sha512-OV7JjAgOTfAFJmHZLvpSTb4qi0nIILDV1gWPYDnDJUTNFM5aGlRAhk4QcT8i7TuAleeEV5Fdkqn3t4mS+Q11fg==}
+    engines: {node: '>=6'}
+    dependencies:
+      builtin-modules: 3.3.0
     dev: true
 
   /is-callable/1.2.4:
@@ -12988,8 +13011,8 @@ packages:
       source-map: 0.7.4
     dev: true
 
-  /v8-to-istanbul/9.0.0:
-    resolution: {integrity: sha512-HcvgY/xaRm7isYmyx+lFKA4uQmfUbN0J4M0nNItvzTvH/iQ9kW5j/t4YSR+Ge323/lrgDAWJoF46tzGQHwBHFw==}
+  /v8-to-istanbul/9.0.1:
+    resolution: {integrity: sha512-74Y4LqY74kLE6IFyIjPtkSTWzUZmj8tdHT9Ii/26dvQ6K9Dl2NbEfj0XgU2sHCtKgt5VupqhlO/5aWuqS+IY1w==}
     engines: {node: '>=10.12.0'}
     dependencies:
       '@jridgewell/trace-mapping': 0.3.13

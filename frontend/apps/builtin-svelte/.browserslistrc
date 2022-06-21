@@ -1,5 +1,0 @@
-[modern]
-supports es6-module
-
-[legacy]
-defaults, not IE 11, not samsung 12

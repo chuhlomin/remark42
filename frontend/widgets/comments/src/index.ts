@@ -1,13 +1,13 @@
-import Comments from './comments.svelte';
+import Comments from './comments.svelte'
 
-let app: Comments;
+let app: Comments
 
-export function initCommentsWidget() {
+export function initCommentsWidget(): void {
 	app = new Comments({
 		target: document.body,
-	});
+	})
 }
 
-export function destroyCommentsWidget() {
-	app.$destroy();
+export function destroyCommentsWidget(): void {
+	app.$destroy()
 }
